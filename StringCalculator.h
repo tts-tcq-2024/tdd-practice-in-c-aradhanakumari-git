@@ -37,7 +37,7 @@ void findDel(const char* str, char* del) {
 
 void isValueNegative(int value) {
     if (value < 0) {
-        throw std::runtime_error("negatives number is not allowed");
+        printf("negatives number is not allowed");
     }
 }
 
@@ -56,7 +56,7 @@ int getSum(const char* original_str, const char* delimiter) {
 }
 
 int add(const char* str) {
-    char del[];
+    char del[50];
     if (checkForEmptyString(str)) {
         return 0;
     }
